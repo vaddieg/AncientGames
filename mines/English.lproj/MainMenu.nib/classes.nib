@@ -1,0 +1,37 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {
+                cellCheck = id; 
+                enterName = id; 
+                minLevel = id; 
+                minStart = id; 
+                showMinHelp = id; 
+                showScore = id; 
+            }; 
+            CLASS = MinController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                levMenu = NSMenu; 
+                levPop = NSPopUpButton; 
+                minField = NSMatrix; 
+                minHelpWindow = NSWindow; 
+                minStartButton = NSButton; 
+                minTimeField = NSTextField; 
+                nameField = NSTextField; 
+                nameWindow = NSWindow; 
+                scoreWindow = ScoreWindowController; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }, 
+        {
+            ACTIONS = {closeScores = id; resetScores = id; }; 
+            CLASS = ScoreWindowController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {scoreTable = NSTableView; }; 
+            SUPERCLASS = NSWindowController; 
+        }
+    ); 
+    IBVersion = 1; 
+}

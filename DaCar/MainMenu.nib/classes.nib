@@ -1,0 +1,18 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {nextScene = id; start = id; }; 
+            CLASS = DCGamController; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = VZGameController; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            CLASS = VZGameController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {"_view" = NSView; }; 
+            SUPERCLASS = NSWindowController; 
+        }
+    ); 
+    IBVersion = 1; 
+}

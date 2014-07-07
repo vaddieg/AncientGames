@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>DaCar copy.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>DaCar.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>DaCarGame.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>SceneEditor.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>VZGameFramework.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>1997096805B4730E00A80C15</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>19A22FCB196B5A8800AA0F35</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>19A22FE7196B5A8900AA0F35</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>19A23001196B5B7C00AA0F35</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>19DF275B058F2BAE00A80CF8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>29B97326FDCFA39411CA2CEA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

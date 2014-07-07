@@ -1,0 +1,1551 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXApplicationTarget section */
+		1997096805B4730E00A80C15 /* SceneEditor */ = {
+			isa = PBXApplicationTarget;
+			buildConfigurationList = 190F070C0D47CDB3005CDE0C /* Build configuration list for PBXApplicationTarget "SceneEditor" */;
+			buildPhases = (
+				1997096305B4730E00A80C15 /* Headers */,
+				1997096405B4730E00A80C15 /* Resources */,
+				1997096505B4730E00A80C15 /* Sources */,
+				1997096605B4730E00A80C15 /* Frameworks */,
+				1997096705B4730E00A80C15 /* Rez */,
+			);
+			comments = "Base editor for VZSceneController config";
+			dependencies = (
+			);
+			name = SceneEditor;
+			productInstallPath = "$(USER_APPS_DIR)";
+			productName = SceneEditor;
+			productReference = 1997096905B4730E00A80C15 /* SceneEditor.app */;
+			productSettingsXML = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<!DOCTYPE plist PUBLIC \"-//Apple//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">
+<plist version=\"1.0\">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleDocumentTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>plist</string>
+			</array>
+			<key>CFBundleTypeName</key>
+			<string>Property List</string>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>NSDocumentClass</key>
+			<string>VZSceneDocument</string>
+		</dict>
+	</array>
+	<key>CFBundleExecutable</key>
+	<string>SceneEditor</string>
+	<key>CFBundleGetInfoString</key>
+	<string></string>
+	<key>CFBundleIconFile</key>
+	<string></string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>0.0.1d1</string>
+	<key>NSMainNibFile</key>
+	<string>EditorMain.nib</string>
+	<key>NSPrincipalClass</key>
+	<string>NSApplication</string>
+</dict>
+</plist>
+";
+		};
+		29B97326FDCFA39411CA2CEA /* DaCar */ = {
+			isa = PBXApplicationTarget;
+			buildConfigurationList = 190F070A0D47CDB3005CDE0C /* Build configuration list for PBXApplicationTarget "DaCar" */;
+			buildPhases = (
+				29B97327FDCFA39411CA2CEA /* Headers */,
+				29B97328FDCFA39411CA2CEA /* Resources */,
+				29B9732BFDCFA39411CA2CEA /* Sources */,
+				29B9732DFDCFA39411CA2CEA /* Frameworks */,
+			);
+			dependencies = (
+			);
+			name = DaCar;
+			productInstallPath = "$(HOME)/Applications";
+			productName = DaCar;
+			productReference = 17587328FF379C6511CA2CBB /* DaCar.app */;
+			productSettingsXML = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<!DOCTYPE plist PUBLIC \"-//Apple//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">
+<plist version=\"1.0\">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>DaCar</string>
+	<key>CFBundleIconFile</key>
+	<string></string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>0.1</string>
+	<key>NSMainNibFile</key>
+	<string>MainMenu</string>
+	<key>NSPrincipalClass</key>
+	<string>NSApplication</string>
+</dict>
+</plist>
+";
+		};
+/* End PBXApplicationTarget section */
+
+/* Begin PBXBuildFile section */
+		089C165EFE840E0CC02AAC07 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		1058C7A3FEA54F0111CA2CBB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		193E24CD058F6FDE00A80CF8 /* DCGamController.m in Sources */ = {isa = PBXBuildFile; fileRef = 193E24CB058F6FDE00A80CF8 /* DCGamController.m */; };
+		193E24CE058F6FDE00A80CF8 /* DCGamController.h in Headers */ = {isa = PBXBuildFile; fileRef = 193E24CC058F6FDE00A80CF8 /* DCGamController.h */; };
+		1949989A05B6DF5700A80C15 /* ActiveObjProps.nib in Resources */ = {isa = PBXBuildFile; fileRef = 1949989805B6DF5600A80C15 /* ActiveObjProps.nib */; };
+		1949989D05B6E32800A80C15 /* VZObjectPropertyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1949989B05B6E32800A80C15 /* VZObjectPropertyController.m */; };
+		1949989E05B6E32800A80C15 /* VZObjectPropertyController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1949989C05B6E32800A80C15 /* VZObjectPropertyController.h */; };
+		194998A005B6F45A00A80C15 /* VZActiveObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 19B46D9305AB1AC400A80C15 /* VZActiveObject.m */; };
+		194998A105B6F45A00A80C15 /* VZActiveObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 19B46D9205AB1AC400A80C15 /* VZActiveObject.h */; };
+		194998A205B6F45B00A80C15 /* VZGameObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 19AD70C4058DF6E200A80CF8 /* VZGameObject.m */; };
+		194998A305B6F46300A80C15 /* VZGameObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 19AD70C3058DF6E200A80CF8 /* VZGameObject.h */; };
+		194998A505B6F82B00A80C15 /* VZResourceManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1999D07F059336FC00A80CF8 /* VZResourceManager.h */; };
+		194998A605B6F83B00A80C15 /* VZResourceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1999D080059336FC00A80CF8 /* VZResourceManager.m */; };
+		194998A705B70C7500A80C15 /* VZSceneController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19AD70C9058E0A1C00A80CF8 /* VZSceneController.m */; };
+		194998A805B70C7500A80C15 /* VZSceneController.h in Headers */ = {isa = PBXBuildFile; fileRef = 19AD70C8058E0A1C00A80CF8 /* VZSceneController.h */; };
+		19499C1C05B714B800A80C15 /* VZSceneView.m in Sources */ = {isa = PBXBuildFile; fileRef = 19AD70C0058DF35000A80CF8 /* VZSceneView.m */; };
+		19499C1D05B714B800A80C15 /* VZSceneView.h in Headers */ = {isa = PBXBuildFile; fileRef = 19AD70BF058DF35000A80CF8 /* VZSceneView.h */; };
+		195301F605A9DECD00A80C15 /* constants.h in Headers */ = {isa = PBXBuildFile; fileRef = 195301F505A9DECD00A80C15 /* constants.h */; };
+		1997096205B468F900A80C15 /* blow100x100row.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 1997096105B468F800A80C15 /* blow100x100row.tiff */; };
+		1997097D05B4745E00A80C15 /* VZSceneDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 1997097B05B4745E00A80C15 /* VZSceneDocument.h */; };
+		1997097E05B4745E00A80C15 /* VZSceneDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 1997097C05B4745E00A80C15 /* VZSceneDocument.m */; };
+		1997097F05B4745E00A80C15 /* VZSceneDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 1997097B05B4745E00A80C15 /* VZSceneDocument.h */; };
+		1997098005B4745E00A80C15 /* VZSceneDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 1997097C05B4745E00A80C15 /* VZSceneDocument.m */; };
+		1997098605B47AC200A80C15 /* VZEditorInterfaceController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1997098405B47AC200A80C15 /* VZEditorInterfaceController.h */; };
+		1997098705B47AC200A80C15 /* VZEditorInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1997098505B47AC200A80C15 /* VZEditorInterfaceController.m */; };
+		1997098805B47AC200A80C15 /* VZEditorInterfaceController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1997098405B47AC200A80C15 /* VZEditorInterfaceController.h */; };
+		1997098905B47AC200A80C15 /* VZEditorInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1997098505B47AC200A80C15 /* VZEditorInterfaceController.m */; };
+		1997098D05B47C7E00A80C15 /* EditorDocument.nib in Resources */ = {isa = PBXBuildFile; fileRef = 1997098B05B47C7E00A80C15 /* EditorDocument.nib */; };
+		1997098E05B47C7E00A80C15 /* EditorDocument.nib in Resources */ = {isa = PBXBuildFile; fileRef = 1997098B05B47C7E00A80C15 /* EditorDocument.nib */; };
+		199709A805B483C900A80C15 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		199709AA05B4843F00A80C15 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		199709AC05B4846900A80C15 /* SceneEditor_Prefix.h in Headers */ = {isa = PBXBuildFile; fileRef = 199709AB05B4846900A80C15 /* SceneEditor_Prefix.h */; };
+		199709AD05B4846900A80C15 /* SceneEditor_Prefix.h in Headers */ = {isa = PBXBuildFile; fileRef = 199709AB05B4846900A80C15 /* SceneEditor_Prefix.h */; };
+		199709B005B48B5000A80C15 /* EditorMain.nib in Resources */ = {isa = PBXBuildFile; fileRef = 199709AE05B48B5000A80C15 /* EditorMain.nib */; };
+		1999D081059336FC00A80CF8 /* VZResourceManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1999D07F059336FC00A80CF8 /* VZResourceManager.h */; };
+		1999D082059336FC00A80CF8 /* VZResourceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1999D080059336FC00A80CF8 /* VZResourceManager.m */; };
+		1999D083059336FC00A80CF8 /* VZResourceManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1999D07F059336FC00A80CF8 /* VZResourceManager.h */; };
+		1999D084059336FC00A80CF8 /* VZResourceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1999D080059336FC00A80CF8 /* VZResourceManager.m */; };
+		199AFBE6059730BF00A80CF8 /* b2Row.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 199AFBE5059730BF00A80CF8 /* b2Row.tiff */; };
+		199AFBEE05973A1200A80CF8 /* DCAircraftObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 199AFBEC05973A1200A80CF8 /* DCAircraftObject.h */; };
+		199AFBEF05973A1200A80CF8 /* DCAircraftObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 199AFBED05973A1200A80CF8 /* DCAircraftObject.m */; };
+		199DF7E705909CD800A80CF8 /* VZGameController.h in Headers */ = {isa = PBXBuildFile; fileRef = 19AD70B7058DEDBD00A80CF8 /* VZGameController.h */; };
+		199DF7E805909CD900A80CF8 /* VZGameController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19AD70B8058DEDBD00A80CF8 /* VZGameController.m */; };
+		19A22FCE196B5A8800AA0F35 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19A22FCD196B5A8800AA0F35 /* Cocoa.framework */; };
+		19A22FD5196B5A8800AA0F35 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 19A22FD3196B5A8800AA0F35 /* InfoPlist.strings */; };
+		19A22FD7196B5A8800AA0F35 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A22FD6196B5A8800AA0F35 /* main.m */; };
+		19A22FDB196B5A8800AA0F35 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 19A22FD9196B5A8800AA0F35 /* Credits.rtf */; };
+		19A22FDE196B5A8800AA0F35 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A22FDD196B5A8800AA0F35 /* AppDelegate.m */; };
+		19A22FEA196B5A8900AA0F35 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19A22FE9196B5A8900AA0F35 /* XCTest.framework */; };
+		19A22FEB196B5A8900AA0F35 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19A22FCD196B5A8800AA0F35 /* Cocoa.framework */; };
+		19A22FF3196B5A8900AA0F35 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 19A22FF1196B5A8900AA0F35 /* InfoPlist.strings */; };
+		19A22FF5196B5A8900AA0F35 /* DaCarGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A22FF4196B5A8900AA0F35 /* DaCarGameTests.m */; };
+		19A22FFE196B5B5000AA0F35 /* DCGamController.m in Sources */ = {isa = PBXBuildFile; fileRef = 193E24CB058F6FDE00A80CF8 /* DCGamController.m */; };
+		19A22FFF196B5B7000AA0F35 /* VZInputManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 19AD70CD058E1B8800A80CF8 /* VZInputManager.m */; };
+		19A23000196B5B7400AA0F35 /* VZSceneView.m in Sources */ = {isa = PBXBuildFile; fileRef = 19AD70C0058DF35000A80CF8 /* VZSceneView.m */; };
+		19A23033196B5B8D00AA0F35 /* VZSceneController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19AD70C9058E0A1C00A80CF8 /* VZSceneController.m */; };
+		19A23034196B5B9100AA0F35 /* VZGameObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 19AD70C4058DF6E200A80CF8 /* VZGameObject.m */; };
+		19A23035196B5B9500AA0F35 /* VZActiveObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 19B46D9305AB1AC400A80C15 /* VZActiveObject.m */; };
+		19A23036196B5B9900AA0F35 /* VZResourceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1999D080059336FC00A80CF8 /* VZResourceManager.m */; };
+		19A23038196B5BBB00AA0F35 /* DCBackroundObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D38ACD05923CA600A80CF8 /* DCBackroundObject.m */; };
+		19A23039196B5BCB00AA0F35 /* DCAircraftObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 199AFBED05973A1200A80CF8 /* DCAircraftObject.m */; };
+		19A2303A196B5BCE00AA0F35 /* DCRadarObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 19BD7572059B323700A80CF8 /* DCRadarObject.m */; };
+		19A2303B196B5BD200AA0F35 /* DCTerrainObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 19B46D8B05AAF1DB00A80C15 /* DCTerrainObject.m */; };
+		19A2303C196B5BD500AA0F35 /* DCBuildingObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 19B46E6E05ADC49E00A80C15 /* DCBuildingObject.m */; };
+		19A2303D196B5BDA00AA0F35 /* DCSceneController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19DF28EC058F40EE00A80CF8 /* DCSceneController.m */; };
+		19A2303F196B5C3300AA0F35 /* blow100x100row.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 1997096105B468F800A80C15 /* blow100x100row.tiff */; };
+		19A23040196B5C3800AA0F35 /* forest.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 19B3107905B2F7D500A80C15 /* forest.tiff */; };
+		19A23041196B5C3C00AA0F35 /* grass.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 19B46D8E05AB05B300A80C15 /* grass.tiff */; };
+		19A23042196B5C3F00AA0F35 /* water.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 19B46D8F05AB05B300A80C15 /* water.tiff */; };
+		19A23043196B5C4200AA0F35 /* b2Row.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 199AFBE5059730BF00A80CF8 /* b2Row.tiff */; };
+		19A23044196B5C4600AA0F35 /* sky.png in Resources */ = {isa = PBXBuildFile; fileRef = 19C374300595F6F200A80CF8 /* sky.png */; };
+		19A23045196B5C4900AA0F35 /* pattern.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 19D38AD205924F7E00A80CF8 /* pattern.jpg */; };
+		19A23046196B5C4D00AA0F35 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		19A23047196B5D4B00AA0F35 /* VZGameController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19AD70B8058DEDBD00A80CF8 /* VZGameController.m */; };
+		19A2304A196B5EC600AA0F35 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 19A23049196B5EC600AA0F35 /* MainMenu.nib */; };
+		19ABCE4805BC038700A80C15 /* DCAircraftObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 199AFBEC05973A1200A80CF8 /* DCAircraftObject.h */; };
+		19ABCE4905BC038800A80C15 /* DCAircraftObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 199AFBED05973A1200A80CF8 /* DCAircraftObject.m */; };
+		19ABCE4A05BC038900A80C15 /* DCRadarObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 19BD7571059B323700A80CF8 /* DCRadarObject.h */; };
+		19ABCE4B05BC038A00A80C15 /* DCRadarObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 19BD7572059B323700A80CF8 /* DCRadarObject.m */; };
+		19ABCE4C05BC038C00A80C15 /* DCTerrainObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 19B46D8A05AAF1DB00A80C15 /* DCTerrainObject.h */; };
+		19ABCE4D05BC038C00A80C15 /* DCTerrainObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 19B46D8B05AAF1DB00A80C15 /* DCTerrainObject.m */; };
+		19ABCE5005BC03DF00A80C15 /* VZInputManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 19AD70CD058E1B8800A80CF8 /* VZInputManager.m */; };
+		19ABCE5105BC03E000A80C15 /* VZInputManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 19AD70CC058E1B8800A80CF8 /* VZInputManager.h */; };
+		19ABD27B05BC544300A80C15 /* DCSceneController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19DF28EC058F40EE00A80CF8 /* DCSceneController.m */; };
+		19ABD27C05BC544400A80C15 /* DCSceneController.h in Headers */ = {isa = PBXBuildFile; fileRef = 19DF28EB058F40EE00A80CF8 /* DCSceneController.h */; };
+		19AD70C1058DF35000A80CF8 /* VZSceneView.h in Headers */ = {isa = PBXBuildFile; fileRef = 19AD70BF058DF35000A80CF8 /* VZSceneView.h */; };
+		19AD70C2058DF35000A80CF8 /* VZSceneView.m in Sources */ = {isa = PBXBuildFile; fileRef = 19AD70C0058DF35000A80CF8 /* VZSceneView.m */; };
+		19AD70C5058DF6E200A80CF8 /* VZGameObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 19AD70C3058DF6E200A80CF8 /* VZGameObject.h */; };
+		19AD70C6058DF6E200A80CF8 /* VZGameObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 19AD70C4058DF6E200A80CF8 /* VZGameObject.m */; };
+		19AD70CA058E0A1C00A80CF8 /* VZSceneController.h in Headers */ = {isa = PBXBuildFile; fileRef = 19AD70C8058E0A1C00A80CF8 /* VZSceneController.h */; };
+		19AD70CB058E0A1C00A80CF8 /* VZSceneController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19AD70C9058E0A1C00A80CF8 /* VZSceneController.m */; };
+		19AD70CE058E1B8800A80CF8 /* VZInputManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 19AD70CC058E1B8800A80CF8 /* VZInputManager.h */; };
+		19AD70CF058E1B8800A80CF8 /* VZInputManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 19AD70CD058E1B8800A80CF8 /* VZInputManager.m */; };
+		19B3107A05B2F7D500A80C15 /* forest.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 19B3107905B2F7D500A80C15 /* forest.tiff */; };
+		19B46D8C05AAF1DB00A80C15 /* DCTerrainObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 19B46D8A05AAF1DB00A80C15 /* DCTerrainObject.h */; };
+		19B46D8D05AAF1DB00A80C15 /* DCTerrainObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 19B46D8B05AAF1DB00A80C15 /* DCTerrainObject.m */; };
+		19B46D9005AB05B300A80C15 /* grass.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 19B46D8E05AB05B300A80C15 /* grass.tiff */; };
+		19B46D9105AB05B300A80C15 /* water.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 19B46D8F05AB05B300A80C15 /* water.tiff */; };
+		19B46D9405AB1AC400A80C15 /* VZActiveObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 19B46D9205AB1AC400A80C15 /* VZActiveObject.h */; };
+		19B46D9505AB1AC400A80C15 /* VZActiveObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 19B46D9305AB1AC400A80C15 /* VZActiveObject.m */; };
+		19B46D9605AB1AC400A80C15 /* VZActiveObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 19B46D9205AB1AC400A80C15 /* VZActiveObject.h */; };
+		19B46D9705AB1AC400A80C15 /* VZActiveObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 19B46D9305AB1AC400A80C15 /* VZActiveObject.m */; };
+		19BD7573059B323700A80CF8 /* DCRadarObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 19BD7571059B323700A80CF8 /* DCRadarObject.h */; };
+		19BD7574059B323700A80CF8 /* DCRadarObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 19BD7572059B323700A80CF8 /* DCRadarObject.m */; };
+		19C374310595F6F300A80CF8 /* sky.png in Resources */ = {isa = PBXBuildFile; fileRef = 19C374300595F6F200A80CF8 /* sky.png */; };
+		19D38ACE05923CA600A80CF8 /* DCBackroundObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 19D38ACC05923CA600A80CF8 /* DCBackroundObject.h */; };
+		19D38ACF05923CA600A80CF8 /* DCBackroundObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D38ACD05923CA600A80CF8 /* DCBackroundObject.m */; };
+		19D38AD305924F7E00A80CF8 /* pattern.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 19D38AD205924F7E00A80CF8 /* pattern.jpg */; };
+		19DF275D058F2BC800A80CF8 /* VZGameController.h in Headers */ = {isa = PBXBuildFile; fileRef = 19AD70B7058DEDBD00A80CF8 /* VZGameController.h */; };
+		19DF275E058F2BC900A80CF8 /* VZGameController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19AD70B8058DEDBD00A80CF8 /* VZGameController.m */; };
+		19DF275F058F2BC900A80CF8 /* VZInputManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 19AD70CC058E1B8800A80CF8 /* VZInputManager.h */; };
+		19DF2760058F2BCA00A80CF8 /* VZInputManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 19AD70CD058E1B8800A80CF8 /* VZInputManager.m */; };
+		19DF2761058F2BCB00A80CF8 /* VZSceneView.h in Headers */ = {isa = PBXBuildFile; fileRef = 19AD70BF058DF35000A80CF8 /* VZSceneView.h */; };
+		19DF2762058F2BCB00A80CF8 /* VZSceneView.m in Sources */ = {isa = PBXBuildFile; fileRef = 19AD70C0058DF35000A80CF8 /* VZSceneView.m */; };
+		19DF2763058F2BCC00A80CF8 /* VZSceneController.h in Headers */ = {isa = PBXBuildFile; fileRef = 19AD70C8058E0A1C00A80CF8 /* VZSceneController.h */; };
+		19DF2764058F2BCD00A80CF8 /* VZSceneController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19AD70C9058E0A1C00A80CF8 /* VZSceneController.m */; };
+		19DF2765058F2BCE00A80CF8 /* VZGameObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 19AD70C3058DF6E200A80CF8 /* VZGameObject.h */; };
+		19DF2766058F2BCE00A80CF8 /* VZGameObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 19AD70C4058DF6E200A80CF8 /* VZGameObject.m */; };
+		19DF28ED058F40EE00A80CF8 /* DCSceneController.h in Headers */ = {isa = PBXBuildFile; fileRef = 19DF28EB058F40EE00A80CF8 /* DCSceneController.h */; };
+		19DF28EE058F40EE00A80CF8 /* DCSceneController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19DF28EC058F40EE00A80CF8 /* DCSceneController.m */; };
+		19DF28F8058F6E5400A80CF8 /* VZGameKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 19DF2767058F2BEF00A80CF8 /* VZGameKit.h */; };
+		29B9732CFDCFA39411CA2CEA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		32CA4F650368D2AA00C91783 /* DaCar_Prefix.h in Headers */ = {isa = PBXBuildFile; fileRef = 32CA4F630368D1EE00C91783 /* DaCar_Prefix.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		19A22FEC196B5A8900AA0F35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19A22FCB196B5A8800AA0F35;
+			remoteInfo = DaCarGame;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		17587328FF379C6511CA2CBB /* DaCar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = DaCar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		193E24CB058F6FDE00A80CF8 /* DCGamController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = DCGamController.m; sourceTree = "<group>"; };
+		193E24CC058F6FDE00A80CF8 /* DCGamController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DCGamController.h; sourceTree = "<group>"; };
+		1949989905B6DF5700A80C15 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/ActiveObjProps.nib; sourceTree = "<group>"; };
+		1949989B05B6E32800A80C15 /* VZObjectPropertyController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = VZObjectPropertyController.m; sourceTree = "<group>"; };
+		1949989C05B6E32800A80C15 /* VZObjectPropertyController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = VZObjectPropertyController.h; sourceTree = "<group>"; };
+		195301F505A9DECD00A80C15 /* constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = constants.h; sourceTree = "<group>"; };
+		1997096105B468F800A80C15 /* blow100x100row.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = blow100x100row.tiff; sourceTree = "<group>"; };
+		1997096905B4730E00A80C15 /* SceneEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = SceneEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1997097B05B4745E00A80C15 /* VZSceneDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VZSceneDocument.h; sourceTree = "<group>"; };
+		1997097C05B4745E00A80C15 /* VZSceneDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VZSceneDocument.m; sourceTree = "<group>"; };
+		1997098405B47AC200A80C15 /* VZEditorInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = VZEditorInterfaceController.h; sourceTree = "<group>"; };
+		1997098505B47AC200A80C15 /* VZEditorInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = VZEditorInterfaceController.m; sourceTree = "<group>"; };
+		1997098C05B47C7E00A80C15 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/EditorDocument.nib; sourceTree = "<group>"; };
+		199709AB05B4846900A80C15 /* SceneEditor_Prefix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneEditor_Prefix.h; sourceTree = "<group>"; };
+		199709AF05B48B5000A80C15 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/EditorMain.nib; sourceTree = "<group>"; };
+		1999D07F059336FC00A80CF8 /* VZResourceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VZResourceManager.h; sourceTree = "<group>"; };
+		1999D080059336FC00A80CF8 /* VZResourceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VZResourceManager.m; sourceTree = "<group>"; };
+		199AFBE5059730BF00A80CF8 /* b2Row.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = b2Row.tiff; sourceTree = "<group>"; };
+		199AFBEC05973A1200A80CF8 /* DCAircraftObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCAircraftObject.h; sourceTree = "<group>"; };
+		199AFBED05973A1200A80CF8 /* DCAircraftObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCAircraftObject.m; sourceTree = "<group>"; };
+		19A22FCC196B5A8800AA0F35 /* DaCarGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DaCarGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		19A22FCD196B5A8800AA0F35 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		19A22FCF196B5A8800AA0F35 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		19A22FD2196B5A8800AA0F35 /* DaCarGame-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DaCarGame-Info.plist"; sourceTree = "<group>"; };
+		19A22FD4196B5A8800AA0F35 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		19A22FD6196B5A8800AA0F35 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		19A22FD8196B5A8800AA0F35 /* DaCarGame-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DaCarGame-Prefix.pch"; sourceTree = "<group>"; };
+		19A22FDA196B5A8800AA0F35 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		19A22FDC196B5A8800AA0F35 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		19A22FDD196B5A8800AA0F35 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		19A22FE8196B5A8900AA0F35 /* DaCarGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DaCarGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		19A22FE9196B5A8900AA0F35 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		19A22FF0196B5A8900AA0F35 /* DaCarGameTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DaCarGameTests-Info.plist"; sourceTree = "<group>"; };
+		19A22FF2196B5A8900AA0F35 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		19A22FF4196B5A8900AA0F35 /* DaCarGameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DaCarGameTests.m; sourceTree = "<group>"; };
+		19A23049196B5EC600AA0F35 /* MainMenu.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = MainMenu.nib; sourceTree = "<group>"; };
+		19ABCE3D05BBEB7700A80C15 /* VZEditorAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VZEditorAppDelegate.h; sourceTree = "<group>"; };
+		19ABCE3E05BBEB7700A80C15 /* VZEditorAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VZEditorAppDelegate.m; sourceTree = "<group>"; };
+		19AD70B7058DEDBD00A80CF8 /* VZGameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VZGameController.h; sourceTree = "<group>"; };
+		19AD70B8058DEDBD00A80CF8 /* VZGameController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VZGameController.m; sourceTree = "<group>"; };
+		19AD70BF058DF35000A80CF8 /* VZSceneView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VZSceneView.h; sourceTree = "<group>"; };
+		19AD70C0058DF35000A80CF8 /* VZSceneView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VZSceneView.m; sourceTree = "<group>"; };
+		19AD70C3058DF6E200A80CF8 /* VZGameObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VZGameObject.h; sourceTree = "<group>"; };
+		19AD70C4058DF6E200A80CF8 /* VZGameObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VZGameObject.m; sourceTree = "<group>"; };
+		19AD70C8058E0A1C00A80CF8 /* VZSceneController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VZSceneController.h; sourceTree = "<group>"; };
+		19AD70C9058E0A1C00A80CF8 /* VZSceneController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VZSceneController.m; sourceTree = "<group>"; };
+		19AD70CC058E1B8800A80CF8 /* VZInputManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VZInputManager.h; sourceTree = "<group>"; };
+		19AD70CD058E1B8800A80CF8 /* VZInputManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VZInputManager.m; sourceTree = "<group>"; };
+		19B3107905B2F7D500A80C15 /* forest.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = forest.tiff; sourceTree = "<group>"; };
+		19B46D8A05AAF1DB00A80C15 /* DCTerrainObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTerrainObject.h; sourceTree = "<group>"; };
+		19B46D8B05AAF1DB00A80C15 /* DCTerrainObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCTerrainObject.m; sourceTree = "<group>"; };
+		19B46D8E05AB05B300A80C15 /* grass.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = grass.tiff; sourceTree = "<group>"; };
+		19B46D8F05AB05B300A80C15 /* water.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = water.tiff; sourceTree = "<group>"; };
+		19B46D9205AB1AC400A80C15 /* VZActiveObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VZActiveObject.h; sourceTree = "<group>"; };
+		19B46D9305AB1AC400A80C15 /* VZActiveObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VZActiveObject.m; sourceTree = "<group>"; };
+		19B46E6D05ADC49E00A80C15 /* DCBuildingObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCBuildingObject.h; sourceTree = "<group>"; };
+		19B46E6E05ADC49E00A80C15 /* DCBuildingObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCBuildingObject.m; sourceTree = "<group>"; };
+		19BD7571059B323700A80CF8 /* DCRadarObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCRadarObject.h; sourceTree = "<group>"; };
+		19BD7572059B323700A80CF8 /* DCRadarObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCRadarObject.m; sourceTree = "<group>"; };
+		19C374300595F6F200A80CF8 /* sky.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sky.png; sourceTree = "<group>"; };
+		19D38ACC05923CA600A80CF8 /* DCBackroundObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCBackroundObject.h; sourceTree = "<group>"; };
+		19D38ACD05923CA600A80CF8 /* DCBackroundObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCBackroundObject.m; sourceTree = "<group>"; };
+		19D38AD205924F7E00A80CF8 /* pattern.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pattern.jpg; sourceTree = "<group>"; };
+		19DF275C058F2BAE00A80CF8 /* VZGameFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = VZGameFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		19DF2767058F2BEF00A80CF8 /* VZGameKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VZGameKit.h; sourceTree = "<group>"; };
+		19DF28EB058F40EE00A80CF8 /* DCSceneController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCSceneController.h; sourceTree = "<group>"; };
+		19DF28EC058F40EE00A80CF8 /* DCSceneController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCSceneController.m; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		32CA4F630368D1EE00C91783 /* DaCar_Prefix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DaCar_Prefix.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworkTarget section */
+		19DF275B058F2BAE00A80CF8 /* VZGameFramework */ = {
+			isa = PBXFrameworkTarget;
+			buildConfigurationList = 190F070B0D47CDB3005CDE0C /* Build configuration list for PBXFrameworkTarget "VZGameFramework" */;
+			buildPhases = (
+				19DF2756058F2BAE00A80CF8 /* Headers */,
+				19DF2757058F2BAE00A80CF8 /* Resources */,
+				19DF2758058F2BAE00A80CF8 /* Sources */,
+				19DF2759058F2BAE00A80CF8 /* Frameworks */,
+				19DF275A058F2BAE00A80CF8 /* Rez */,
+			);
+			dependencies = (
+			);
+			name = VZGameFramework;
+			productInstallPath = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+			productName = VZGameFramework;
+			productReference = 19DF275C058F2BAE00A80CF8 /* VZGameFramework.framework */;
+			productSettingsXML = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<!DOCTYPE plist PUBLIC \"-//Apple//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">
+<plist version=\"1.0\">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string></string>
+	<key>CFBundleGetInfoString</key>
+	<string></string>
+	<key>CFBundleIconFile</key>
+	<string></string>
+	<key>CFBundleIdentifier</key>
+	<string></string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string></string>
+	<key>CFBundlePackageType</key>
+	<string>FMWK</string>
+	<key>CFBundleShortVersionString</key>
+	<string></string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>0.0.1d1</string>
+</dict>
+</plist>
+";
+		};
+/* End PBXFrameworkTarget section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1997096605B4730E00A80C15 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				199709A805B483C900A80C15 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19A22FC9196B5A8800AA0F35 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19A22FCE196B5A8800AA0F35 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19A22FE5196B5A8900AA0F35 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19A22FEB196B5A8900AA0F35 /* Cocoa.framework in Frameworks */,
+				19A22FEA196B5A8900AA0F35 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19DF2759058F2BAE00A80CF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29B9732DFDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1058C7A3FEA54F0111CA2CBB /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				19DF2755058F2AFD00A80CF8 /* VZGF */,
+				1997097A05B4742200A80C15 /* Editor */,
+				19B46E6C05ADC31800A80C15 /* DCObjects */,
+				195301F505A9DECD00A80C15 /* constants.h */,
+				19DF28EB058F40EE00A80CF8 /* DCSceneController.h */,
+				19DF28EC058F40EE00A80CF8 /* DCSceneController.m */,
+				193E24CC058F6FDE00A80CF8 /* DCGamController.h */,
+				193E24CB058F6FDE00A80CF8 /* DCGamController.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				19A22FCF196B5A8800AA0F35 /* CoreData.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		1997097A05B4742200A80C15 /* Editor */ = {
+			isa = PBXGroup;
+			children = (
+				1997097B05B4745E00A80C15 /* VZSceneDocument.h */,
+				1997097C05B4745E00A80C15 /* VZSceneDocument.m */,
+				1997098405B47AC200A80C15 /* VZEditorInterfaceController.h */,
+				1997098505B47AC200A80C15 /* VZEditorInterfaceController.m */,
+				1949989C05B6E32800A80C15 /* VZObjectPropertyController.h */,
+				1949989B05B6E32800A80C15 /* VZObjectPropertyController.m */,
+				19ABCE3D05BBEB7700A80C15 /* VZEditorAppDelegate.h */,
+				19ABCE3E05BBEB7700A80C15 /* VZEditorAppDelegate.m */,
+			);
+			name = Editor;
+			sourceTree = "<group>";
+		};
+		19A22FD0196B5A8800AA0F35 /* DaCarGame */ = {
+			isa = PBXGroup;
+			children = (
+				19A22FDC196B5A8800AA0F35 /* AppDelegate.h */,
+				19A22FDD196B5A8800AA0F35 /* AppDelegate.m */,
+				19A22FD1196B5A8800AA0F35 /* Supporting Files */,
+			);
+			path = DaCarGame;
+			sourceTree = "<group>";
+		};
+		19A22FD1196B5A8800AA0F35 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				19A22FD2196B5A8800AA0F35 /* DaCarGame-Info.plist */,
+				19A22FD3196B5A8800AA0F35 /* InfoPlist.strings */,
+				19A22FD6196B5A8800AA0F35 /* main.m */,
+				19A22FD8196B5A8800AA0F35 /* DaCarGame-Prefix.pch */,
+				19A22FD9196B5A8800AA0F35 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		19A22FEE196B5A8900AA0F35 /* DaCarGameTests */ = {
+			isa = PBXGroup;
+			children = (
+				19A22FF4196B5A8900AA0F35 /* DaCarGameTests.m */,
+				19A22FEF196B5A8900AA0F35 /* Supporting Files */,
+			);
+			path = DaCarGameTests;
+			sourceTree = "<group>";
+		};
+		19A22FEF196B5A8900AA0F35 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				19A22FF0196B5A8900AA0F35 /* DaCarGameTests-Info.plist */,
+				19A22FF1196B5A8900AA0F35 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		19B46E6C05ADC31800A80C15 /* DCObjects */ = {
+			isa = PBXGroup;
+			children = (
+				19D38ACC05923CA600A80CF8 /* DCBackroundObject.h */,
+				19D38ACD05923CA600A80CF8 /* DCBackroundObject.m */,
+				199AFBEC05973A1200A80CF8 /* DCAircraftObject.h */,
+				199AFBED05973A1200A80CF8 /* DCAircraftObject.m */,
+				19BD7571059B323700A80CF8 /* DCRadarObject.h */,
+				19BD7572059B323700A80CF8 /* DCRadarObject.m */,
+				19B46D8A05AAF1DB00A80C15 /* DCTerrainObject.h */,
+				19B46D8B05AAF1DB00A80C15 /* DCTerrainObject.m */,
+				19B46E6D05ADC49E00A80C15 /* DCBuildingObject.h */,
+				19B46E6E05ADC49E00A80C15 /* DCBuildingObject.m */,
+			);
+			name = DCObjects;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				17587328FF379C6511CA2CBB /* DaCar.app */,
+				19DF275C058F2BAE00A80CF8 /* VZGameFramework.framework */,
+				1997096905B4730E00A80C15 /* SceneEditor.app */,
+				19A22FCC196B5A8800AA0F35 /* DaCarGame.app */,
+				19A22FE8196B5A8900AA0F35 /* DaCarGameTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		19DF2755058F2AFD00A80CF8 /* VZGF */ = {
+			isa = PBXGroup;
+			children = (
+				19DF2767058F2BEF00A80CF8 /* VZGameKit.h */,
+				19AD70B7058DEDBD00A80CF8 /* VZGameController.h */,
+				19AD70B8058DEDBD00A80CF8 /* VZGameController.m */,
+				19AD70CC058E1B8800A80CF8 /* VZInputManager.h */,
+				19AD70CD058E1B8800A80CF8 /* VZInputManager.m */,
+				19AD70BF058DF35000A80CF8 /* VZSceneView.h */,
+				19AD70C0058DF35000A80CF8 /* VZSceneView.m */,
+				19AD70C8058E0A1C00A80CF8 /* VZSceneController.h */,
+				19AD70C9058E0A1C00A80CF8 /* VZSceneController.m */,
+				19AD70C3058DF6E200A80CF8 /* VZGameObject.h */,
+				19AD70C4058DF6E200A80CF8 /* VZGameObject.m */,
+				19B46D9205AB1AC400A80C15 /* VZActiveObject.h */,
+				19B46D9305AB1AC400A80C15 /* VZActiveObject.m */,
+				1999D07F059336FC00A80CF8 /* VZResourceManager.h */,
+				1999D080059336FC00A80CF8 /* VZResourceManager.m */,
+			);
+			name = VZGF;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* DaCar */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				19A22FD0196B5A8800AA0F35 /* DaCarGame */,
+				19A22FEE196B5A8900AA0F35 /* DaCarGameTests */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = DaCar;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* DaCar_Prefix.h */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+				199709AB05B4846900A80C15 /* SceneEditor_Prefix.h */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				19A23049196B5EC600AA0F35 /* MainMenu.nib */,
+				199709AE05B48B5000A80C15 /* EditorMain.nib */,
+				1997098B05B47C7E00A80C15 /* EditorDocument.nib */,
+				1949989805B6DF5600A80C15 /* ActiveObjProps.nib */,
+				1997096105B468F800A80C15 /* blow100x100row.tiff */,
+				19B3107905B2F7D500A80C15 /* forest.tiff */,
+				19B46D8E05AB05B300A80C15 /* grass.tiff */,
+				19B46D8F05AB05B300A80C15 /* water.tiff */,
+				199AFBE5059730BF00A80CF8 /* b2Row.tiff */,
+				19C374300595F6F200A80CF8 /* sky.png */,
+				19D38AD205924F7E00A80CF8 /* pattern.jpg */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				19A22FCD196B5A8800AA0F35 /* Cocoa.framework */,
+				19A22FE9196B5A8900AA0F35 /* XCTest.framework */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1997096305B4730E00A80C15 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1997097F05B4745E00A80C15 /* VZSceneDocument.h in Headers */,
+				1997098805B47AC200A80C15 /* VZEditorInterfaceController.h in Headers */,
+				199709AD05B4846900A80C15 /* SceneEditor_Prefix.h in Headers */,
+				1949989E05B6E32800A80C15 /* VZObjectPropertyController.h in Headers */,
+				194998A105B6F45A00A80C15 /* VZActiveObject.h in Headers */,
+				194998A305B6F46300A80C15 /* VZGameObject.h in Headers */,
+				194998A505B6F82B00A80C15 /* VZResourceManager.h in Headers */,
+				194998A805B70C7500A80C15 /* VZSceneController.h in Headers */,
+				19499C1D05B714B800A80C15 /* VZSceneView.h in Headers */,
+				19ABCE4805BC038700A80C15 /* DCAircraftObject.h in Headers */,
+				19ABCE4A05BC038900A80C15 /* DCRadarObject.h in Headers */,
+				19ABCE4C05BC038C00A80C15 /* DCTerrainObject.h in Headers */,
+				19ABCE5105BC03E000A80C15 /* VZInputManager.h in Headers */,
+				19ABD27C05BC544400A80C15 /* DCSceneController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19DF2756058F2BAE00A80CF8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19DF275D058F2BC800A80CF8 /* VZGameController.h in Headers */,
+				19DF275F058F2BC900A80CF8 /* VZInputManager.h in Headers */,
+				19DF2761058F2BCB00A80CF8 /* VZSceneView.h in Headers */,
+				19DF2763058F2BCC00A80CF8 /* VZSceneController.h in Headers */,
+				19DF2765058F2BCE00A80CF8 /* VZGameObject.h in Headers */,
+				1999D083059336FC00A80CF8 /* VZResourceManager.h in Headers */,
+				19B46D9605AB1AC400A80C15 /* VZActiveObject.h in Headers */,
+				1997097D05B4745E00A80C15 /* VZSceneDocument.h in Headers */,
+				1997098605B47AC200A80C15 /* VZEditorInterfaceController.h in Headers */,
+				199709AC05B4846900A80C15 /* SceneEditor_Prefix.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29B97327FDCFA39411CA2CEA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32CA4F650368D2AA00C91783 /* DaCar_Prefix.h in Headers */,
+				19AD70C1058DF35000A80CF8 /* VZSceneView.h in Headers */,
+				19AD70C5058DF6E200A80CF8 /* VZGameObject.h in Headers */,
+				19AD70CA058E0A1C00A80CF8 /* VZSceneController.h in Headers */,
+				19AD70CE058E1B8800A80CF8 /* VZInputManager.h in Headers */,
+				19DF28ED058F40EE00A80CF8 /* DCSceneController.h in Headers */,
+				19DF28F8058F6E5400A80CF8 /* VZGameKit.h in Headers */,
+				193E24CE058F6FDE00A80CF8 /* DCGamController.h in Headers */,
+				199DF7E705909CD800A80CF8 /* VZGameController.h in Headers */,
+				19D38ACE05923CA600A80CF8 /* DCBackroundObject.h in Headers */,
+				1999D081059336FC00A80CF8 /* VZResourceManager.h in Headers */,
+				199AFBEE05973A1200A80CF8 /* DCAircraftObject.h in Headers */,
+				19BD7573059B323700A80CF8 /* DCRadarObject.h in Headers */,
+				195301F605A9DECD00A80C15 /* constants.h in Headers */,
+				19B46D8C05AAF1DB00A80C15 /* DCTerrainObject.h in Headers */,
+				19B46D9405AB1AC400A80C15 /* VZActiveObject.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		19A22FCB196B5A8800AA0F35 /* DaCarGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19A22FF6196B5A8900AA0F35 /* Build configuration list for PBXNativeTarget "DaCarGame" */;
+			buildPhases = (
+				19A22FC8196B5A8800AA0F35 /* Sources */,
+				19A22FC9196B5A8800AA0F35 /* Frameworks */,
+				19A22FCA196B5A8800AA0F35 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DaCarGame;
+			productName = DaCarGame;
+			productReference = 19A22FCC196B5A8800AA0F35 /* DaCarGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+		19A22FE7196B5A8900AA0F35 /* DaCarGameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19A22FFA196B5A8900AA0F35 /* Build configuration list for PBXNativeTarget "DaCarGameTests" */;
+			buildPhases = (
+				19A22FE4196B5A8900AA0F35 /* Sources */,
+				19A22FE5196B5A8900AA0F35 /* Frameworks */,
+				19A22FE6196B5A8900AA0F35 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				19A22FED196B5A8900AA0F35 /* PBXTargetDependency */,
+			);
+			name = DaCarGameTests;
+			productName = DaCarGameTests;
+			productReference = 19A22FE8196B5A8900AA0F35 /* DaCarGameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				TargetAttributes = {
+					19A22FE7196B5A8900AA0F35 = {
+						TestTargetID = 29B97326FDCFA39411CA2CEA;
+					};
+				};
+			};
+			buildConfigurationList = 190F07090D47CDB3005CDE0C /* Build configuration list for PBXProject "DaCar" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* DaCar */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				29B97326FDCFA39411CA2CEA /* DaCar */,
+				19DF275B058F2BAE00A80CF8 /* VZGameFramework */,
+				1997096805B4730E00A80C15 /* SceneEditor */,
+				19A22FCB196B5A8800AA0F35 /* DaCarGame */,
+				19A22FE7196B5A8900AA0F35 /* DaCarGameTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1997096405B4730E00A80C15 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1997098E05B47C7E00A80C15 /* EditorDocument.nib in Resources */,
+				199709B005B48B5000A80C15 /* EditorMain.nib in Resources */,
+				1949989A05B6DF5700A80C15 /* ActiveObjProps.nib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19A22FCA196B5A8800AA0F35 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19A23043196B5C4200AA0F35 /* b2Row.tiff in Resources */,
+				19A23046196B5C4D00AA0F35 /* InfoPlist.strings in Resources */,
+				19A23044196B5C4600AA0F35 /* sky.png in Resources */,
+				19A23045196B5C4900AA0F35 /* pattern.jpg in Resources */,
+				19A23041196B5C3C00AA0F35 /* grass.tiff in Resources */,
+				19A22FD5196B5A8800AA0F35 /* InfoPlist.strings in Resources */,
+				19A2304A196B5EC600AA0F35 /* MainMenu.nib in Resources */,
+				19A23040196B5C3800AA0F35 /* forest.tiff in Resources */,
+				19A23042196B5C3F00AA0F35 /* water.tiff in Resources */,
+				19A22FDB196B5A8800AA0F35 /* Credits.rtf in Resources */,
+				19A2303F196B5C3300AA0F35 /* blow100x100row.tiff in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19A22FE6196B5A8900AA0F35 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19A22FF3196B5A8900AA0F35 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19DF2757058F2BAE00A80CF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1997098D05B47C7E00A80C15 /* EditorDocument.nib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29B97328FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				089C165EFE840E0CC02AAC07 /* InfoPlist.strings in Resources */,
+				19D38AD305924F7E00A80CF8 /* pattern.jpg in Resources */,
+				19C374310595F6F300A80CF8 /* sky.png in Resources */,
+				199AFBE6059730BF00A80CF8 /* b2Row.tiff in Resources */,
+				19B46D9005AB05B300A80C15 /* grass.tiff in Resources */,
+				19B46D9105AB05B300A80C15 /* water.tiff in Resources */,
+				19B3107A05B2F7D500A80C15 /* forest.tiff in Resources */,
+				1997096205B468F900A80C15 /* blow100x100row.tiff in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		1997096705B4730E00A80C15 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19DF275A058F2BAE00A80CF8 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1997096505B4730E00A80C15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1997098005B4745E00A80C15 /* VZSceneDocument.m in Sources */,
+				1997098905B47AC200A80C15 /* VZEditorInterfaceController.m in Sources */,
+				199709AA05B4843F00A80C15 /* main.m in Sources */,
+				1949989D05B6E32800A80C15 /* VZObjectPropertyController.m in Sources */,
+				194998A005B6F45A00A80C15 /* VZActiveObject.m in Sources */,
+				194998A205B6F45B00A80C15 /* VZGameObject.m in Sources */,
+				194998A605B6F83B00A80C15 /* VZResourceManager.m in Sources */,
+				194998A705B70C7500A80C15 /* VZSceneController.m in Sources */,
+				19499C1C05B714B800A80C15 /* VZSceneView.m in Sources */,
+				19ABCE4905BC038800A80C15 /* DCAircraftObject.m in Sources */,
+				19ABCE4B05BC038A00A80C15 /* DCRadarObject.m in Sources */,
+				19ABCE4D05BC038C00A80C15 /* DCTerrainObject.m in Sources */,
+				19ABCE5005BC03DF00A80C15 /* VZInputManager.m in Sources */,
+				19ABD27B05BC544300A80C15 /* DCSceneController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19A22FC8196B5A8800AA0F35 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19A2303D196B5BDA00AA0F35 /* DCSceneController.m in Sources */,
+				19A22FDE196B5A8800AA0F35 /* AppDelegate.m in Sources */,
+				19A23000196B5B7400AA0F35 /* VZSceneView.m in Sources */,
+				19A23034196B5B9100AA0F35 /* VZGameObject.m in Sources */,
+				19A23038196B5BBB00AA0F35 /* DCBackroundObject.m in Sources */,
+				19A23039196B5BCB00AA0F35 /* DCAircraftObject.m in Sources */,
+				19A23033196B5B8D00AA0F35 /* VZSceneController.m in Sources */,
+				19A23036196B5B9900AA0F35 /* VZResourceManager.m in Sources */,
+				19A2303B196B5BD200AA0F35 /* DCTerrainObject.m in Sources */,
+				19A22FD7196B5A8800AA0F35 /* main.m in Sources */,
+				19A22FFF196B5B7000AA0F35 /* VZInputManager.m in Sources */,
+				19A23047196B5D4B00AA0F35 /* VZGameController.m in Sources */,
+				19A23035196B5B9500AA0F35 /* VZActiveObject.m in Sources */,
+				19A2303A196B5BCE00AA0F35 /* DCRadarObject.m in Sources */,
+				19A22FFE196B5B5000AA0F35 /* DCGamController.m in Sources */,
+				19A2303C196B5BD500AA0F35 /* DCBuildingObject.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19A22FE4196B5A8900AA0F35 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19A22FF5196B5A8900AA0F35 /* DaCarGameTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19DF2758058F2BAE00A80CF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19DF275E058F2BC900A80CF8 /* VZGameController.m in Sources */,
+				19DF2760058F2BCA00A80CF8 /* VZInputManager.m in Sources */,
+				19DF2762058F2BCB00A80CF8 /* VZSceneView.m in Sources */,
+				19DF2764058F2BCD00A80CF8 /* VZSceneController.m in Sources */,
+				19DF2766058F2BCE00A80CF8 /* VZGameObject.m in Sources */,
+				1999D084059336FC00A80CF8 /* VZResourceManager.m in Sources */,
+				19B46D9705AB1AC400A80C15 /* VZActiveObject.m in Sources */,
+				1997097E05B4745E00A80C15 /* VZSceneDocument.m in Sources */,
+				1997098705B47AC200A80C15 /* VZEditorInterfaceController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29B9732BFDCFA39411CA2CEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29B9732CFDCFA39411CA2CEA /* main.m in Sources */,
+				19AD70C2058DF35000A80CF8 /* VZSceneView.m in Sources */,
+				19AD70C6058DF6E200A80CF8 /* VZGameObject.m in Sources */,
+				19AD70CB058E0A1C00A80CF8 /* VZSceneController.m in Sources */,
+				19AD70CF058E1B8800A80CF8 /* VZInputManager.m in Sources */,
+				19DF28EE058F40EE00A80CF8 /* DCSceneController.m in Sources */,
+				193E24CD058F6FDE00A80CF8 /* DCGamController.m in Sources */,
+				199DF7E805909CD900A80CF8 /* VZGameController.m in Sources */,
+				19D38ACF05923CA600A80CF8 /* DCBackroundObject.m in Sources */,
+				1999D082059336FC00A80CF8 /* VZResourceManager.m in Sources */,
+				199AFBEF05973A1200A80CF8 /* DCAircraftObject.m in Sources */,
+				19BD7574059B323700A80CF8 /* DCRadarObject.m in Sources */,
+				19B46D8D05AAF1DB00A80C15 /* DCTerrainObject.m in Sources */,
+				19B46D9505AB1AC400A80C15 /* VZActiveObject.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		19A22FED196B5A8900AA0F35 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 19A22FCB196B5A8800AA0F35 /* DaCarGame */;
+			targetProxy = 19A22FEC196B5A8900AA0F35 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1949989805B6DF5600A80C15 /* ActiveObjProps.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1949989905B6DF5700A80C15 /* English */,
+			);
+			name = ActiveObjProps.nib;
+			sourceTree = "<group>";
+		};
+		1997098B05B47C7E00A80C15 /* EditorDocument.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1997098C05B47C7E00A80C15 /* English */,
+			);
+			name = EditorDocument.nib;
+			sourceTree = "<group>";
+		};
+		199709AE05B48B5000A80C15 /* EditorMain.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				199709AF05B48B5000A80C15 /* English */,
+			);
+			name = EditorMain.nib;
+			sourceTree = "<group>";
+		};
+		19A22FD3196B5A8800AA0F35 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19A22FD4196B5A8800AA0F35 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		19A22FD9196B5A8800AA0F35 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19A22FDA196B5A8800AA0F35 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		19A22FF1196B5A8900AA0F35 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19A22FF2196B5A8900AA0F35 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		190F06FD0D47CDB3005CDE0C /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Development;
+		};
+		190F06FE0D47CDB3005CDE0C /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Deployment;
+		};
+		190F06FF0D47CDB3005CDE0C /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Default;
+		};
+		190F07000D47CDB3005CDE0C /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRECOMPILE_PREFIX_HEADER = YES;
+				PREFIX_HEADER = DaCar_Prefix.h;
+				PRODUCT_NAME = DaCar;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		190F07010D47CDB3005CDE0C /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRECOMPILE_PREFIX_HEADER = YES;
+				PREFIX_HEADER = DaCar_Prefix.h;
+				PRODUCT_NAME = DaCar;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		190F07020D47CDB3005CDE0C /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_OPTIMIZATION_LEVEL = 3;
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRECOMPILE_PREFIX_HEADER = YES;
+				PREFIX_HEADER = DaCar_Prefix.h;
+				PRODUCT_NAME = DaCar;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+			};
+			name = Default;
+		};
+		190F07030D47CDB3005CDE0C /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOL_FLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRINCIPAL_CLASS = "";
+				PRODUCT_NAME = VZGameFramework;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = framework;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		190F07040D47CDB3005CDE0C /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOL_FLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRINCIPAL_CLASS = "";
+				PRODUCT_NAME = VZGameFramework;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = framework;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		190F07050D47CDB3005CDE0C /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOL_FLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRINCIPAL_CLASS = "";
+				PRODUCT_NAME = VZGameFramework;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Default;
+		};
+		190F07060D47CDB3005CDE0C /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRECOMPILE_PREFIX_HEADER = YES;
+				PREFIX_HEADER = SceneEditor_Prefix.h;
+				PRODUCT_NAME = SceneEditor;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		190F07070D47CDB3005CDE0C /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRECOMPILE_PREFIX_HEADER = YES;
+				PREFIX_HEADER = SceneEditor_Prefix.h;
+				PRODUCT_NAME = SceneEditor;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		190F07080D47CDB3005CDE0C /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRECOMPILE_PREFIX_HEADER = YES;
+				PREFIX_HEADER = SceneEditor_Prefix.h;
+				PRODUCT_NAME = SceneEditor;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+			};
+			name = Default;
+		};
+		19A22FF7196B5A8900AA0F35 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DaCarGame/DaCarGame-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "DaCarGame/DaCarGame-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.8;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Development;
+		};
+		19A22FF8196B5A8900AA0F35 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DaCarGame/DaCarGame-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "DaCarGame/DaCarGame-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.8;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Deployment;
+		};
+		19A22FF9196B5A8900AA0F35 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DaCarGame/DaCarGame-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "DaCarGame/DaCarGame-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.8;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Default;
+		};
+		19A22FFB196B5A8900AA0F35 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DaCarGame/DaCarGame-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "DaCarGameTests/DaCarGameTests-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Development;
+		};
+		19A22FFC196B5A8900AA0F35 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DaCarGame/DaCarGame-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "DaCarGameTests/DaCarGameTests-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Deployment;
+		};
+		19A22FFD196B5A8900AA0F35 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DaCarGame/DaCarGame-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "DaCarGameTests/DaCarGameTests-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		190F07090D47CDB3005CDE0C /* Build configuration list for PBXProject "DaCar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				190F06FD0D47CDB3005CDE0C /* Development */,
+				190F06FE0D47CDB3005CDE0C /* Deployment */,
+				190F06FF0D47CDB3005CDE0C /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		190F070A0D47CDB3005CDE0C /* Build configuration list for PBXApplicationTarget "DaCar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				190F07000D47CDB3005CDE0C /* Development */,
+				190F07010D47CDB3005CDE0C /* Deployment */,
+				190F07020D47CDB3005CDE0C /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		190F070B0D47CDB3005CDE0C /* Build configuration list for PBXFrameworkTarget "VZGameFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				190F07030D47CDB3005CDE0C /* Development */,
+				190F07040D47CDB3005CDE0C /* Deployment */,
+				190F07050D47CDB3005CDE0C /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		190F070C0D47CDB3005CDE0C /* Build configuration list for PBXApplicationTarget "SceneEditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				190F07060D47CDB3005CDE0C /* Development */,
+				190F07070D47CDB3005CDE0C /* Deployment */,
+				190F07080D47CDB3005CDE0C /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		19A22FF6196B5A8900AA0F35 /* Build configuration list for PBXNativeTarget "DaCarGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19A22FF7196B5A8900AA0F35 /* Development */,
+				19A22FF8196B5A8900AA0F35 /* Deployment */,
+				19A22FF9196B5A8900AA0F35 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		19A22FFA196B5A8900AA0F35 /* Build configuration list for PBXNativeTarget "DaCarGameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19A22FFB196B5A8900AA0F35 /* Development */,
+				19A22FFC196B5A8900AA0F35 /* Deployment */,
+				19A22FFD196B5A8900AA0F35 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

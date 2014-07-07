@@ -1,0 +1,32 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {
+                changeDirection = id; 
+                changeLayer = id; 
+                changeLifeTime = id; 
+                changeSpeed = id; 
+                changeX = id; 
+                changeY = id; 
+                switchActive = id; 
+                switchContrByUser = id; 
+            }; 
+            CLASS = VZObjectPropertyController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                "_view" = NSView; 
+                activeSwitch = NSButton; 
+                dirField = NSTextField; 
+                layField = NSTextField; 
+                lifeField = NSTextField; 
+                spField = NSTextField; 
+                userSwitch = NSButton; 
+                xField = NSTextField; 
+                yField = NSTextField; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}
